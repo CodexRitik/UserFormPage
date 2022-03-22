@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>form</title>
+</head>
+
+<body>
+
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <div id="body">
+
+    <form id="survey-form" action="" method="post">
+
+      <label id="name-label" for="name">
+        <p>1. Name:</p>
+      </label>
+
+      <input id="name"  name="name" type="text" placeholder="Enter Your Name" required>
+
+
+      <label id="email-label" for="email">
+        <p>2. Email:</p>
+      </label>
+
+      <input id="email" name="email" type="email" placeholder="Enter Your Email" required>
+
+      <label id="number-label" for="number">
+        <p>3. Contact No:</p>
+      </label>
+
+      <input class="number"  name="mobile" type="number" placeholder="Enter your Conatat no.">
+
+      <label id="pincode-label" for="pincode-label">
+        <p>4. Pincode:</p>
+      </label>
+
+      <input class="number" name="pincode" type="number" placeholder="Enter Your Pincode" required>
+
+
+      <p>5. Which Option best describes you?</p>
+      <select id="dropdown" name="desc">
+
+        <option name="" value="Student">Student</option>
+        <option name="" value="Intern" >Intern</option>
+        <option name="" value="Professional">Professional</option>
+        <option name="" value="Others">Other</option>
+      </select>
+
+      <p>6. Select Your Gender</p>
+
+      <input type="radio" name="gender" value="Male">Male</input>
+      <br>
+      <input type="radio" name="gender" value="Female">Female</input>
+      <br>
+      <input type="radio" name="gender" value="Others">Others</input>
+      <br>
+
+      <p>7. Languages and Frameworks known
+        <small>(Check all that apply)</small>
+      </p>
+      <fieldset>
+      <input type="checkbox" name="languages" value="C">C</input>
+      <br>
+      <input type="checkbox" name="languages" value="C++">C++</input>
+      <br>
+      <input type="checkbox" name="languages" value="Python">Python</input>
+      <br>
+      <input type="checkbox" name="languages" value="javaScript">JavaScript</input>
+      <br>
+      <input type="checkbox" name="languages" value="C#">C#</input>
+      <br>
+      <input type="checkbox" name="languages" value="Java">Java</input>
+      <br>
+      <input type="checkbox" name="languages" value="React">React</input>
+      <br>
+      <input type="checkbox" name="languages" value="Angular">Angular</input>
+      <br>
+      <input type="checkbox" name="languages" value="Django">Django</input>
+      <br>
+      <input type="checkbox" name="languages" value="Spring">Spring</input>
+      <br>
+      </fieldset>
+      <br>
+
+      <textarea id="comment" rows="4" cols="40" name="text"></textarea>
+      <br>
+      <p>8. Storage Medium</p>
+      <select name="database" id="dropdown">
+        <option value="database" name="">Database </option>
+        <option value="local host" name=""> Local file</option>
+
+      </select>
+
+      <input id="submit" type="submit" name="submit" value="Submit">
+
+    </form>
+
+  </div>
+</body>
+
+</html>
